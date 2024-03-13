@@ -1,0 +1,93 @@
+
+*{
+   margin:0;
+   padding:0;
+}
+
+/* MANY WEBSITES CAN USE TO get related color palletes like - "coolers"- so using that pallete */
+
+body{
+     
+    background-color: #548687;
+    text-align: center;
+} 
+
+.container{
+    height: 70vh;                 /*set dynamic height - means container take 70% of the viewport height */
+
+    /* also make container flex so that ye game box middle me aaye */
+    display:flex;             
+    flex-wrap:wrap;       
+    justify-content: center;
+    align-content: center;
+
+ 
+}
+
+.game{
+    height: 60vmin;             /*height can also give 70 vh but give this - search it on mdn- it basically means viewport
+                                dimenison ka 60% de rhe h isko */
+    width : 60vmin;             /* when limit kr diya width ko , so to phle 9 box ek line me aa rahe the ,
+                                ab limit kr diya so ek line me 3 hi box h ab*/
+
+    /* to properly arrange boxes- make them display : flex - now again all boxes come in single line */
+    display:flex;
+
+    flex-wrap:wrap;         /* this means if no space left, so next line me aa jao */
+                                
+    justify-content: center;
+    align-content: center;
+    gap :1.5vmin;            /* to create gap between all boxes*/
+}
+
+.box{
+    height:18vmin;                          /*we want ek line me 3 boxes , so total height is 60%, so hume 3 me divide krna h so 
+                                             1 box ko 20% ke around dena chahiye so 18 vmin or 18% likh denge*/
+    width:18vmin;       /*give same width*/
+    border-radius: 1rem;
+    border:none;         /* already existing border ko remove kar do*/
+    box-shadow: 0 0 1rem rgb(0,0,0,0.3);         /* made black shadow of opacity 0.3*/
+    font-size :  8vmin;       /* can take in px or rem also but as both h and w are in vmin, so we take this also in vmin*/
+    color: #b0413e;
+    background-color: #ffffc7;
+
+
+}
+
+#reset-btn{
+    padding :1rem;
+    font-size :1.25rem;
+    background-color: #191913;
+    color:#fff;
+    border-radius: 1rem;
+    border:none;
+}
+
+
+/* new-btn has same styling as of reset-btn- so copy paste done */
+#new-btn{
+    padding :1rem;
+    font-size :1.25rem;
+    background-color: #191913;
+    color:#fff;
+    border-radius: 1rem;
+    border:none;
+}
+                      
+#msg{
+    color: #ffffc7;
+    font-size: 4vmin;
+}
+
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hide{
+    display:none;
+}

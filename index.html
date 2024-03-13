@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE-GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- we have given hide class to it bcs starting me we have no winner - so ye msg starting me display nhi karna hai
+    and now isme hide word bhi add kr diya class me - so css file me jaha par bhi hide class hai uska display none set kar do-->
+    <div class="msg-container hide">
+        <p id ="msg">Winner</p>
+        <br/>
+        <button id ="new-btn">New Game</button> <!-- means winner pta lagane ke baad want a new game -->
+
+    </div>
+    <br/>
+    <h1>TIC TAC TOE GAME</h1>
+    <div class="container">
+      <div class="game">
+        <!-- made all 9 boxes of button type-bcs we want boxes pr click krte hi vha X aa jaye ya O aa jaye.
+        (button se hi click krte hi aese hi functionality we can add) -->
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        
+      </div>
+    </div>
+
+    <button id="reset-btn">RESET GAME</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+<!-- finally see game - jaise hi get winner - got option of 'new game' and restart kr denge and scroll karke see old game also
+
+//3 hw - 1. see its pic
+2. give different color of O and X
+3. solve leetcode Q DSA - of "find winners of tic tac toe game using js can also do" -->
